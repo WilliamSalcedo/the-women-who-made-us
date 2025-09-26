@@ -4,5 +4,5 @@ export default function About() {
       <h1 className="text-2xl font-semibold">About</h1>
       <p className="text-gray-600">Acerca de este proyecto.</p>
     </section>
-  );
+  )
 }
