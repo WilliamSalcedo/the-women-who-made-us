@@ -1,9 +1,17 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import Home from './pages/Home/HomeScreen'
+import About from './pages/About/About'
+import NotFound from './pages/NotFound/NotFound'
 
 function App() {
   return (
     <>
-      <p className='text-black-100 text-3xl font-bold'>hola</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   )
 }
