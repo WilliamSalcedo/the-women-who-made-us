@@ -1,14 +1,11 @@
-import Header from "../../components/layout/Header";
+import Header from '../../components/layout/Header'
+import VideoPlay from '../../components/VideoPlay'
 
-
-
-export default function Home(){
-    return(
-        <section className="space-y-2">
-            <Header/>
-            <h1 className="text-2xl font-semibold">Home</h1>
-            <p className="text-gray-600">Bienvenido</p>
-            
-        </section>
-    )
+export default function Home() {
+  return (
+    <section className="mx-4 my-6 sm:mx-8 md:mx-20 lg:mx-40 xl:mx-60">
+      <Header />
+      <VideoPlay />
+    </section>
+  )
 }
