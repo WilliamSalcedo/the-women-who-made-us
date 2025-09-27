@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --color-gold: #c5a95e;
+  --font-baskervville: 'Baskervville', serif;
+  --color-purple: #be056d;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
