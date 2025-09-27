@@ -9,7 +9,7 @@ export default function Header() {
       <div className="mx-auto">
         <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
           <div className="flex justify-center md:justify-start">
-            <img src={logo} alt="The Women Who Made Us" className="w-28 md:w-20 lg:w-40" />
+            <img src={logo} alt="The Women Who Made Us" className="w-28 md:w-20 lg:w-45" />
           </div>
           <div className="flex items-center justify-center gap-4 md:justify-end">
             <a
