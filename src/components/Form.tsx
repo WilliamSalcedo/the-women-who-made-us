@@ -28,7 +28,7 @@ const { t }=useTranslation();
             className="w-32 rounded-xl border border-gold bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg"
           />
         </div>
-        <button className="bg-gold mt-4 w-20 text-xs md:py-2 md:w-40 md:mt-0.5 md:text-base  rounded-md border border-white text-center font-bold text-black ">
+        <button className="bg-gold mt-4 w-23 text-xs md:py-2 md:w-40 md:mt-0.5 md:text-base  rounded-md border border-black text-center font-bold text-black ">
           {t("text.btmRegister")}
         </button>
       </form>
