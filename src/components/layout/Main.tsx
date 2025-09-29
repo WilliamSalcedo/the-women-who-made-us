@@ -1,3 +1,4 @@
+import Form from '../Form'
 import Text from '../Text'
 import Title from '../Title'
 import VideoPlay from '../VideoPlay'
@@ -8,6 +9,7 @@ function Main() {
         <VideoPlay />
         <Title />
         <Text />
+        <Form />
     </div>
   )
 }
