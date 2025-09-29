@@ -1,11 +1,14 @@
 import logo from '../../assets/The Women Logo.png'
 import instagram from '../../assets/Instagram_Glyph_White.svg'
 import tiktok from '../../assets/tiktok-1.svg'
+import LanguageSwitcher from '../LanguageSwitcher'
+
 
 export default function Header() {
   console.log('aca estoy')
   return (
     <header className="mb-8 w-full">
+      <LanguageSwitcher />
       <div className="mx-auto">
         <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
           <div className="flex justify-center md:justify-start">
@@ -48,6 +51,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      
     </header>
   )
 }
