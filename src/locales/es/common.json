@@ -8,7 +8,11 @@
     "firstName": "Ingresa tu nombre",
     "lastName": "Ingresa tu apellido",
     "email": "Ingresa tu correo",
-    "btmRegister":"REGISTRARME"
+    "btmRegister":"REGISTRARME",
+    "privacy":"Politica de Privacidad",
+    "terms":"Terminos y Condiciones",
+    "legalText":"© 2025 Planni Entertainment. Todos los derechos reservados. Marca registrada y derechos de autor de Sandra Salcedo Lacouture."
+
 
   }
 }

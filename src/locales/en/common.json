@@ -9,6 +9,10 @@
     "firstName": "First Name",
     "lastName": "Last Name",
     "email": "Email",
-    "btmRegister":"SIGN UP"
+    "btmRegister":"SIGN UP",
+    "privacy":"Privacy Policy",
+    "terms":"Terms & Conditions",
+    "legalText":"Live! The Women Who Made Us™. All Rights Reserved. A Planni Entertainment Production By Sandra Salcedo Lacouture. Trademark registered"
+
   }
 }
