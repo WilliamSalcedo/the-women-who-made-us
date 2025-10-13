@@ -11,8 +11,11 @@
     "btmRegister":"REGISTRARME",
     "privacy":"Politica de Privacidad",
     "terms":"Terminos y Condiciones",
-    "legalText":"© 2025 Planni Entertainment. Todos los derechos reservados. Marca registrada y derechos de autor de Sandra Salcedo Lacouture."
-
+    "legalText":"© 2025 Planni Entertainment. Todos los derechos reservados. Marca registrada y derechos de autor de Sandra Salcedo Lacouture.",
+     "registerEmail":"Este correo ya esta registrado",
+     "errorRegistering":"Error al registrar",
+     "successful":"Registro exitoso",
+     "send":"Enviando..."
 
   }
 }
