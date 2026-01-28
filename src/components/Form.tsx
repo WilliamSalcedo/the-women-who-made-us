@@ -3,19 +3,40 @@ import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { supabase } from '../lib/supabase'
+import { useState } from 'react'
+import Modal from './Modal'
 
-const schema = yup.object({
-  firstName: yup.string().required('El nombre es obligatorio'),
-  lastName: yup.string().required('El apellido es obligatorio'),
-  email: yup.string().email('Email inválido').required('El email es obligatorio'),
-})
+const getSchema = (t: any) =>
+  yup.object({
+    firstName: yup.string().required(t('text.requiredName')),
+    lastName: yup.string().required(t('text.requiredLastName')),
+    email: yup
+      .string()
+      .email(t('text.invalidEmail'))
+      .required(t('text.requiredEmail')),
+  })
 
-type FormData = yup.InferType<typeof schema>
+
+type SchemaType = ReturnType<typeof getSchema>
+type FormData = yup.InferType<SchemaType>
+
 
 export default function Form() {
-  const { t } = useTranslation()
+  const [modalOpen, setModalOpen] = useState(false)
+  const [modalType, setModalType] = useState<'success' | 'error'>('success')
+  const [modalTitle, setModalTitle] = useState('')
+  const [modalDescription, setModalDescription] = useState('')
 
-  
+  const openModal = (type: 'success' | 'error', title: string, description: string) => {
+    setModalType(type)
+    setModalTitle(title)
+    setModalDescription(description)
+    setModalOpen(true)
+  }
+
+  const { t } = useTranslation()
+  const schema = getSchema(t)
+
   const {
     register,
     handleSubmit,
@@ -25,24 +46,43 @@ export default function Form() {
     resolver: yupResolver(schema),
   })
 
-  
   const onSubmit = async (data: FormData) => {
-    const { error } = await supabase.from('subscribers').insert({
-      first_name: data.firstName,
-      last_name: data.lastName,
-      email: data.email.toLowerCase(),
+    const email = data.email.toLowerCase()
+
+    const { data: authData, error: authError } = await supabase.auth.signUp({
+      email,
+      password: crypto.randomUUID(),
     })
 
-    if (error) {
-      if ((error as any).code === '23505') {
-        alert(t('text.registerEmail'))
-      } else {
-        alert(t('text.errorRegistering:') + error.message)
-      }
-    } else {
-      alert(t('text.successful'))
-      reset()
+    console.log(data, 'esto es data')
+
+    if (authError) {
+      openModal('error', t('modal.genericErrorTitle'), t('modal.genericErrorDescription'))
+      return
     }
+
+    if (authData.user && authData.user.identities?.length === 0) {
+      openModal('error', t('modal.emailExistsTitle'), t('modal.emailExistsDescription'))
+      return
+    }
+
+    if (authData.user) {
+      const { error: dbError } = await supabase.from('subscribers').insert({
+        id: authData.user.id,
+        first_name: data.firstName,
+        last_name: data.lastName,
+        email,
+      })
+
+      if (dbError) {
+        openModal('error', t('modal.dbErrorTitle'), t('modal.dbErrorDescription'))
+        return
+      }
+    }
+
+    openModal('success', t('modal.successTitle'), t('modal.successDescription'))
+
+    reset()
   }
 
   return (
@@ -95,8 +135,16 @@ export default function Form() {
           disabled={isSubmitting}
           className="bg-gold mt-4 w-23 rounded-md border border-black text-center text-xs font-bold text-black md:mt-0.5 md:w-40 md:py-2 md:text-base"
         >
-          {isSubmitting ? (t('text.send')) : t('text.btmRegister')}
+          {isSubmitting ? t('text.send') : t('text.btmRegister')}
         </button>
+
+        <Modal
+          open={modalOpen}
+          onClose={() => setModalOpen(false)}
+          title={modalTitle}
+          description={modalDescription}
+          type={modalType}
+        />
       </form>
     </div>
   )
