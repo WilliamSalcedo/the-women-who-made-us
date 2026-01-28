@@ -143,7 +143,7 @@ export default function Form() {
           onClose={() => setModalOpen(false)}
           title={modalTitle}
           description={modalDescription}
-          type={modalType}
+          
         />
       </form>
     </div>

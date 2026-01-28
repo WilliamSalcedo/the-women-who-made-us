@@ -9,10 +9,9 @@ type ModalProps = {
   onClose: () => void
   title: string
   description?: string
-  type?: 'success' | 'error'
 }
 
-export default function Modal({ open, onClose, title, description, type = 'success' }: ModalProps) {
+export default function Modal({ open, onClose, title, description }: ModalProps) {
   const { t } = useTranslation()
   return (
     <Transition appear show={open} as={Fragment}>
