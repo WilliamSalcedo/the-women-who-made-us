@@ -9,13 +9,29 @@
     "firstName": "First Name",
     "lastName": "Last Name",
     "email": "Email",
-    "btmRegister":"SIGN UP",
-    "privacy":"Privacy Policy",
-    "terms":"Terms & Conditions",
-    "legalText":"Live! The Women Who Made Us™. All Rights Reserved. A Planni Entertainment Production By Sandra Salcedo Lacouture. Trademark registered",
-    "registerEmail":"This email is already registered",
-    "errorRegistering":"Error registering",
-    "successful":"Successful record",
-    "send":"Sending..."
+    "btmRegister": "SIGN UP",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "legalText": "Live! The Women Who Made Us™. All Rights Reserved. A Planni Entertainment Production By Sandra Salcedo Lacouture. Trademark registered",
+    "registerEmail": "This email is already registered",
+    "errorRegistering": "Error registering",
+    "successful": "Successful record",
+    "send": "Sending...",
+    "requiredName":"Name is required",
+    "requiredLastName":"Last name is required",
+    "invalidEmail":"Invalid email",
+    "requiredEmail":"Email is required"
+
+  },
+  "modal": {
+    "successTitle": "Registration successful ✨",
+    "successDescription": "You’ve been registered successfully. Check your inbox",
+    "emailExistsTitle": "This email already exists",
+    "emailExistsDescription": "Use a different email address.",
+    "genericErrorTitle": "Something went wrong",
+    "genericErrorDescription": "Please try again in a few minutes.",
+    "dbErrorTitle": "Almost there…",
+    "dbErrorDescription": "Your account was created, but we could not save your profile.",
+    "button":"Okay"
   }
 }

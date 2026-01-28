@@ -1,21 +1,35 @@
 {
   "text": {
-    "title":"Una Experiencia Teatral Que Vale La Pena Esperar",
-    "sub-title":"Proximamente",
+    "title": "Una Experiencia Teatral Que Vale La Pena Esperar",
+    "sub-title": "Proximamente",
     "intro": "¡En vivo! The Women Who Made Us™ es un nuevo concierto teatral audaz que celebra las voces que marcaron generaciones. Desde potentes interpretaciones hasta baladas inolvidables, este  espectáculo combina la emoción de una gira mundial con la intimidad del teatro en vivo.",
     "ctaTitle": "Sé de los primeros en enterarse",
     "ctaDescription": "Regístrate para conocer más sobre esta experiencia innovadora.",
     "firstName": "Ingresa tu nombre",
     "lastName": "Ingresa tu apellido",
     "email": "Ingresa tu correo",
-    "btmRegister":"REGISTRARME",
-    "privacy":"Politica de Privacidad",
-    "terms":"Terminos y Condiciones",
-    "legalText":"© 2025 Planni Entertainment. Todos los derechos reservados. Marca registrada y derechos de autor de Sandra Salcedo Lacouture.",
-     "registerEmail":"Este correo ya esta registrado",
-     "errorRegistering":"Error al registrar",
-     "successful":"Registro exitoso",
-     "send":"Enviando..."
-
+    "btmRegister": "REGISTRARME",
+    "privacy": "Politica de Privacidad",
+    "terms": "Terminos y Condiciones",
+    "legalText": "© 2025 Planni Entertainment. Todos los derechos reservados. Marca registrada y derechos de autor de Sandra Salcedo Lacouture.",
+    "registerEmail": "Este correo ya esta registrado",
+    "errorRegistering": "Error al registrar",
+    "successful": "Registro exitoso",
+    "send": "Enviando...",
+    "requiredName":"Nombre requerido",
+    "requiredLastName":"Apellido requerido",
+    "invalidEmail":"Correo invalido",
+    "requiredEmail":"Correo requerido"
+  },
+  "modal": {
+    "successTitle": "Registro exitoso ✨",
+    "successDescription": "Te registraste correctamente. Revisa tu correo",
+    "emailExistsTitle": "Este correo ya existe",
+    "emailExistsDescription": "Usa otro correo electrónico.",
+    "genericErrorTitle": "Algo salió mal",
+    "genericErrorDescription": "Por favor intenta nuevamente en unos minutos.",
+    "dbErrorTitle": "Casi listo…",
+    "dbErrorDescription": "Tu cuenta fue creada, pero no pudimos guardar tu perfil.",
+    "button":"Aceptar"
   }
 }
