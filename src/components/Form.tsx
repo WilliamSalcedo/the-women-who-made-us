@@ -17,18 +17,19 @@ const getSchema = (t: any) =>
   })
 
 
-type SchemaType = ReturnType<typeof getSchema>
-type FormData = yup.InferType<SchemaType>
+type FormData = {
+  firstName: string
+  lastName: string
+  email: string
+}
 
 
 export default function Form() {
   const [modalOpen, setModalOpen] = useState(false)
-  const [modalType, setModalType] = useState<'success' | 'error'>('success')
   const [modalTitle, setModalTitle] = useState('')
   const [modalDescription, setModalDescription] = useState('')
 
-  const openModal = (type: 'success' | 'error', title: string, description: string) => {
-    setModalType(type)
+  const openModal = (title: string, description: string) => {
     setModalTitle(title)
     setModalDescription(description)
     setModalOpen(true)
@@ -57,12 +58,12 @@ export default function Form() {
     console.log(data, 'esto es data')
 
     if (authError) {
-      openModal('error', t('modal.genericErrorTitle'), t('modal.genericErrorDescription'))
+      openModal(t('modal.genericErrorTitle'), t('modal.genericErrorDescription'))
       return
     }
 
     if (authData.user && authData.user.identities?.length === 0) {
-      openModal('error', t('modal.emailExistsTitle'), t('modal.emailExistsDescription'))
+      openModal(t('modal.emailExistsTitle'), t('modal.emailExistsDescription'))
       return
     }
 
@@ -75,12 +76,12 @@ export default function Form() {
       })
 
       if (dbError) {
-        openModal('error', t('modal.dbErrorTitle'), t('modal.dbErrorDescription'))
+        openModal(t('modal.dbErrorTitle'), t('modal.dbErrorDescription'))
         return
       }
     }
 
-    openModal('success', t('modal.successTitle'), t('modal.successDescription'))
+    openModal(t('modal.successTitle'), t('modal.successDescription'))
 
     reset()
   }
@@ -143,7 +144,6 @@ export default function Form() {
           onClose={() => setModalOpen(false)}
           title={modalTitle}
           description={modalDescription}
-          
         />
       </form>
     </div>
