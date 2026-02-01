@@ -12,7 +12,7 @@
     "btmRegister": "SIGN UP",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
-    "legalText": "Live! The Women Who Made Us™. All Rights Reserved. A Planni Entertainment Production By Sandra Salcedo Lacouture. Trademark registered",
+    "legalText": "The Women Who Made Us™. All Rights Reserved. A Planni Entertainment Production By Sandra Salcedo Lacouture. Trademark registered",
     "registerEmail": "This email is already registered",
     "errorRegistering": "Error registering",
     "successful": "Successful record",
@@ -20,7 +20,9 @@
     "requiredName":"Name is required",
     "requiredLastName":"Last name is required",
     "invalidEmail":"Invalid email",
-    "requiredEmail":"Email is required"
+    "requiredEmail":"Email is required",
+    "privacyText":"By subscribing to Women Who Made Us, you agree that we may use your information to send you editorial content related to the project. Your data is stored securely, never sold, and you may unsubscribe at any time. By continuing, you agree to our Privacy Policy.",
+    "termsText":"By using this site, you agree to the Terms and Conditions of Women Who Made Us. The content is provided for informational purposes, is protected by copyright, and may be modified without prior notice."
 
   },
   "modal": {

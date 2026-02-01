@@ -19,7 +19,9 @@
     "requiredName":"Nombre requerido",
     "requiredLastName":"Apellido requerido",
     "invalidEmail":"Correo invalido",
-    "requiredEmail":"Correo requerido"
+    "requiredEmail":"Correo requerido",
+    "privacyText":"Al suscribirte a Women Who Made Us, aceptas que podamos utilizar tu información para enviarte contenido editorial relacionado con el proyecto. Tus datos se almacenan de forma segura, no se venden y puedes darte de baja en cualquier momento. Al continuar, aceptas nuestra Política de Privacidad.",
+    "termsText":"Al utilizar este sitio, aceptas los Términos y Condiciones de Women Who Made Us. El contenido es de uso informativo, está protegido por derechos de autor y puede ser modificado sin previo aviso."
   },
   "modal": {
     "successTitle": "Registro exitoso ✨",

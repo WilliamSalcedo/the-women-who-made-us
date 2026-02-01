@@ -1,11 +1,10 @@
 import logo from '../../assets/TWHM.png'
-import instagram from '../../assets/Instagram_Glyph_White.svg'
-import tiktok from '../../assets/tiktok-1.svg'
 import LanguageSwitcher from '../LanguageSwitcher'
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
 
 
 export default function Header() {
-  console.log('aca estoy')
+
   return (
     <header className="mb-8 w-full">
       <LanguageSwitcher />
@@ -24,11 +23,7 @@ export default function Header() {
                 aria-label="Instagram"
                 title="Instagram"
               >
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  className="h-4 w-4 transition hover:opacity-75 md:h-5 md:w-5 lg:h-6 lg:w-6"
-                />
+                 <FaInstagram className="h-4 w-4 text-white md:h-5 md:w-5 lg:h-6 lg:w-6" />
               </a>
             </div>
 
@@ -41,11 +36,7 @@ export default function Header() {
                 aria-label="TikTok"
                 title="TikTok"
               >
-                <img
-                  src={tiktok}
-                  alt="TikTok"
-                  className="h-4 w-4 transition hover:opacity-75 md:h-5 md:w-5 lg:h-6 lg:w-6"
-                />
+                <FaTiktok className="h-4 w-4 text-white md:h-5 md:w-5 lg:h-6 lg:w-6" />
               </a>
             </div>
           </div>
