@@ -98,7 +98,7 @@ export default function Form() {
               type="text"
               placeholder={t('text.firstName')}
               autoComplete="given-name"
-              className="border-gold w-32 rounded-xl border bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg"
+              className="border-gold w-32 rounded-xl border bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg placeholder:text-[#fda963]"
               {...register('firstName')}
             />
             {errors.firstName && (
@@ -111,7 +111,7 @@ export default function Form() {
               type="text"
               placeholder={t('text.lastName')}
               autoComplete="family-name"
-              className="border-gold w-32 rounded-xl border bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg"
+              className="border-gold w-32 rounded-xl border bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg placeholder:text-[#fda963]"
               {...register('lastName')}
             />
             {errors.lastName && (
@@ -124,7 +124,7 @@ export default function Form() {
               type="email"
               placeholder={t('text.email')}
               autoComplete="email"
-              className="border-gold w-32 rounded-xl border bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg"
+              className="border-gold w-32 rounded-xl border bg-transparent px-2 py-0.5 text-center text-sm text-white placeholder:text-xs focus:ring-2 focus:ring-white/60 focus:outline-none sm:text-base sm:placeholder:text-sm md:w-56 md:px-3 md:py-2 md:text-lg md:placeholder:text-base lg:text-xl lg:placeholder:text-lg placeholder:text-[#fda963]"
               {...register('email')}
             />
             {errors.email && <p className="mt-1 text-xs text-red-400">{errors.email.message}</p>}
