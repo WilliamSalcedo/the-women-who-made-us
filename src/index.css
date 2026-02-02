@@ -5,7 +5,13 @@
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: "OldAlmanac";
+  src: url("./assets/Font/OldAlmanac/rm_almanack.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 
@@ -18,5 +24,6 @@
   --color-purple: #be056d;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-futura: 'FuturaHeavyBT', sans-serif;
+  --font-almanac: 'OldAlmanac', sans-serif;
   
 }
