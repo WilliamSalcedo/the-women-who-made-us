@@ -1,4 +1,5 @@
 import Form from '../Form'
+import SocialMedia from '../SocialMedia'
 import Text from '../Text'
 import Title from '../Title'
 import VideoPlay from '../VideoPlay'
@@ -11,6 +12,7 @@ function Main() {
         <Title />
         <Text />
         <Form />
+        <SocialMedia />
         <Footer />
     </div>
   )
