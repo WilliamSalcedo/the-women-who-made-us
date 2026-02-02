@@ -1,24 +1,12 @@
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import PrivacyModal from '../PrivacyModal'
-import TermsModal from '../TermsModal'
+import { useNavigate } from 'react-router-dom'
 
 export default function Footer() {
-  const [isActivePolicy, setIsActivePolicy] = useState(false)
-  const [isactiveterms, setIsActiveTerms] = useState(false)
+  const navigate = useNavigate()
   const { t } = useTranslation()
-  const onHandlePrivacy = () => {
-    setIsActivePolicy(true)
-  }
-  const onHandleTerms = ()=>{
-    setIsActiveTerms(true)
-  }
 
-  const onClose = () => {
-    setIsActivePolicy(false)
-    setIsActiveTerms(false)
-  }
-  
+  const onHandlePrivacy = () => navigate('/PrivacyModal')
+  const onHandleTerms = () => navigate('/TermsModal')
 
   return (
     <div>
@@ -26,13 +14,13 @@ export default function Footer() {
         <button onClick={onHandlePrivacy} className="px-3 transition hover:opacity-75">
           {t('text.privacy')}
         </button>
-        <button onClick={onHandleTerms} className="px-3 transition hover:opacity-75">{t('text.terms')}</button>
+        <button onClick={onHandleTerms} className="px-3 transition hover:opacity-75">
+          {t('text.terms')}
+        </button>
       </div>
-      <div className="font-futura m-3 text-center text-[10px] font-semibold text-white italic md:text-sm lg:text-base">
+      <div className="font-futura m-3 text-center text-[10px] text-[#9b9999] italic md:text-sm lg:text-md">
         <p>{t('text.legalText')}</p>
       </div>
-      <PrivacyModal isActive={isActivePolicy} onClose={onClose} />
-      <TermsModal isActive={isactiveterms} onClose={onClose} />
     </div>
   )
 }
