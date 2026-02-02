@@ -134,7 +134,7 @@ export default function Form() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-gold mt-4 w-23 rounded-md border border-black text-center text-xs font-bold text-black md:mt-0.5 md:w-40 md:py-2 md:text-base"
+          className="bg-gradient-to-r from-[#fda963] to-[#c98a3a] mt-4 w-23 rounded-md border border-black text-center text-xs font-bold text-black md:mt-0.5 md:w-40 md:py-2 md:text-base cursor-pointer"
         >
           {isSubmitting ? t('text.send') : t('text.btmRegister')}
         </button>
