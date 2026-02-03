@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from "react-i18next";
-import subTitle from '../assets/LandingSubTitle.png'
+import subTitle from '../assets/LandingSubTitle1.png'
 
 export default function Text() {
   const { t } = useTranslation();
