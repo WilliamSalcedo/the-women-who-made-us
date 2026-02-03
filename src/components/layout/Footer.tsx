@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="font-futura mt-20 flex justify-center divide-x divide-white text-[9px] text-white md:text-sm lg:text-base">
+      <div className="font-futura mt-20 flex justify-center divide-x divide-white text-[9px] text-[#9b9999] md:text-sm lg:text-base">
         <button onClick={onHandlePrivacy} className="px-3 transition hover:opacity-75">
           {t('text.privacy')}
         </button>
