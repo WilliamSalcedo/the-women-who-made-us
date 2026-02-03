@@ -4,7 +4,7 @@ export default function PrivacyModal() {
   const { t } = useTranslation()
 
   return (
-    <div className="w-[100%] border border-white">
+    <div className="w-[100%]">
       <div className="p-6 shadow-xl">
         <h1 className="font-futura mb-2 text-center text-white italic md:text-[25px] lg:text-[30px]">
           {t('text.privacy')}
