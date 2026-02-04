@@ -1,4 +1,5 @@
 import Form from '../Form'
+import Navbar from '../Navbar'
 import SocialMedia from '../SocialMedia'
 import Text from '../Text'
 import Title from '../Title'
@@ -8,12 +9,13 @@ import Footer from './Footer'
 function Main() {
   return (
     <div>
-        <VideoPlay />
-        <Title />
-        <Text />
-        <Form />
-        <SocialMedia />
-        <Footer />
+      <Navbar />
+      <VideoPlay />
+      <Title />
+      <Text />
+      <Form />
+      <SocialMedia />
+      <Footer />
     </div>
   )
 }
