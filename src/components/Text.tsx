@@ -12,7 +12,7 @@ export default function Text() {
           shaped a generation. <br /> It brings together live performances, narrative moments, and visual
           storytelling to create immersive shows that feel like a concert and a cultural experience
           at the same time. Each production explores different themes, eras, and icons, connecting
-          nostalgia with a modern live audience experience. <br /> The platform is designed to expand into
+          nostalgia with a modern live audience experience. <br /> This space is designed to expand into
           multiple productions, collaborations, and live formats, with each chapter adding a new
           layer to the story.
         </p>
