@@ -1,18 +1,18 @@
 export default function VideoHero() {
-  const videoSrc = "/video/WebsiteVideo.mp4";
+  const videoSrc = '/video/websiteVideo1.mp4'
 
   return (
     <div className="flex justify-center py-10">
-      <div className="w-[80%]  aspect-video relative rounded-2xl overflow-hidden">
+      <div className="relative aspect-video w-[80%] overflow-hidden rounded-2xl">
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
           src={videoSrc}
           autoPlay
           muted
-          loop
+          
           playsInline
         />
       </div>
     </div>
-  );
+  )
 }
