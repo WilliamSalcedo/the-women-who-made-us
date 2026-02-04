@@ -6,6 +6,13 @@ export default function PrivacyModal() {
   return (
     <div className="w-[100%]">
       <div className="p-6 shadow-xl">
+        <button
+          onClick={() => window.history.back()}
+          className="top-4 left-4 z-50 flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-white backdrop-blur hover:bg-black md:hidden"
+          aria-label="Go back"
+        >
+          ←
+        </button>
         <h1 className="font-futura mb-2 text-center text-white italic md:text-[25px] lg:text-[30px]">
           {t('text.privacy')}
         </h1>
@@ -17,7 +24,7 @@ export default function PrivacyModal() {
             Privacy Policy explains how we collect, use, store, and protect your personal
             information.
           </p>
-          <ol className="mt-5 list-decimal space-y-10 pl-5 ">
+          <ol className="mt-5 list-decimal space-y-10 pl-5">
             <li>
               <h3 className="font-semibold">Information we collect</h3>
 
@@ -139,7 +146,7 @@ export default function PrivacyModal() {
               <p className="mt-2">
                 To exercise these rights, please contact us at:
                 <br />
-                📩 <span className="underline">contact@thewomenwhomadeus.com</span>
+                📩 <a href="mailto:hello@whomadeus.live">hello@whomadeus.live</a>
               </p>
             </li>
 
@@ -180,7 +187,7 @@ export default function PrivacyModal() {
                 If you have any questions about this Privacy Policy or how we handle your data,
                 please contact us at:
                 <br />
-                📩 <span className="underline">contact@thewomenwhomadeus.com</span>
+                📩 <a href="mailto:hello@whomadeus.live">hello@whomadeus.live</a>
               </p>
             </li>
           </ol>
