@@ -31,7 +31,7 @@ export default function SocialMedia() {
       </div>
        <div className="flex items-center justify-center px-2 py-2">
         <a
-          href="https://www.tiktok.com/@thewomenwhomadeus?_t=ZS-903mQwFausE&_r=1"
+          href="https://www.youtube.com/channel/UCGPSoc-NxO5LnHnIiaQrpKw"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex text-[#fda963] hover:opacity-80 transition"
