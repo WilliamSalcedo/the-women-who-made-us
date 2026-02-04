@@ -71,7 +71,7 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/about" className="transition hover:text-white">
-              Support
+              Get Involved
             </a>
           </li>
         </ul>
@@ -125,7 +125,7 @@ export default function Navbar() {
               <a href="MusicDrawer">Music</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="#">Get Involved</a>
             </li>
           </ul>
         </div>
