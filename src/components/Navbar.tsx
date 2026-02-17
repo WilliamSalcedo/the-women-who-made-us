@@ -1,19 +1,21 @@
 import { useState } from 'react'
 import logo from '../assets/Heart.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
 
   return (
-    <nav className="relative w-full md:z-50">
+    <nav className="relative mt-8 w-full md:z-50">
       <div className="flex items-center justify-between px-2">
         <ul className="hidden w-[90%] items-center justify-around gap-10 px-2 text-xs tracking-widest text-white/80 uppercase md:flex">
-          <span>
+          <Link to="/">
             <img src={logo} alt="Heart" className="w-15 md:w-25 lg:w-30" />
-          </span>
+          </Link>
+
           <li>
-            <a href="#" className="transition hover:text-white">
+            <a href="/" className="transition hover:text-white">
               Home
             </a>
           </li>
