@@ -87,7 +87,12 @@ export default function Form() {
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center flex-col items-center">
+      <div className="m-4 flex justify-center">
+        <p className="font-futura m-4 text-center text-xs text-[#fda963] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+          {t('text.ctaDescription')}
+        </p>
+      </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="m-4 flex w-full max-w-3xl flex-col items-center md:flex-col md:gap-6"
