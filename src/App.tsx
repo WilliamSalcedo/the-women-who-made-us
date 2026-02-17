@@ -6,17 +6,20 @@ import NotFound from './pages/NotFound/NotFound'
 import PrivacyModal from './components/PrivacyModal'
 import TermsModal from './components/TermsModal'
 import MusicDrawer from './components/MusicDrawer'
+import MainLayout from './components/layout/MainLayout'
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/PrivacyModal" element={<PrivacyModal />} />
-        <Route path="/TermsModal" element={<TermsModal />} />
-        <Route path="/MusicDrawer" element={<MusicDrawer />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/PrivacyModal" element={<PrivacyModal />} />
+          <Route path="/TermsModal" element={<TermsModal />} />
+          <Route path="/MusicDrawer" element={<MusicDrawer />} />
+        </Route> 
       </Routes>
     </>
   )
