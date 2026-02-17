@@ -1,4 +1,4 @@
-import title from '../assets/LandingTitle1.png'
+import title from '../assets/LandingTitle.png'
 
 export default function Title() {
   return (
