@@ -1,5 +1,6 @@
 import Form from '../Form'
-import Navbar from '../Navbar'
+import MissionText from '../MissionText'
+import MusicBox from '../MusicBox'
 import SocialMedia from '../SocialMedia'
 import Text from '../Text'
 import Title from '../Title'
@@ -9,10 +10,11 @@ import Footer from './Footer'
 function Main() {
   return (
     <div>
-      <Navbar />
       <VideoPlay />
       <Title />
       <Text />
+      <MusicBox />
+      <MissionText />
       <Form />
       <SocialMedia />
       <Footer />
