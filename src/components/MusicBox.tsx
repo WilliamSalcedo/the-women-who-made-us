@@ -14,10 +14,11 @@ export default function MusicBox() {
       <div className="flex w-full justify-center p-3 md:w-1/2 md:p-6">
         <div className="w-full max-w-[360px] md:max-w-none">
           <iframe
-            src="https://open.spotify.com/embed/playlist/78k4OEhvJ1mzGo9fv8yAsI"
+            src="https://open.spotify.com/embed/playlist/78k4OEhvJ1mzGo9fv8yAsI?theme=0"
             loading="lazy"
-            allow="clipboard-write; encrypted-media"
-            className="h-[380px] w-full rounded-xl md:h-[352px] "
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            allowFullScreen
+            className="h-[232px] w-full rounded-xl border-0 md:h-[352px] md:w-[80%]"
           />
         </div>
       </div>
