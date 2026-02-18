@@ -1,5 +1,5 @@
 export default function VideoHero() {
-  const videoSrc = '/video/BannerVideo.mp4'
+  const videoSrc = '/video/websiteVideo1.mp4'
 
   return (
     <div className="flex justify-center py-10">
