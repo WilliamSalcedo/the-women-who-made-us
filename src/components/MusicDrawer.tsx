@@ -1,10 +1,10 @@
 export default function MusicDrawer() {
   return (
-    <div>
-      <h1 className="font-futura mt-4 mb-2 text-center text-white italic md:text-[25px] lg:text-[30px]">
+    <div className="text-[#fda963]">
+      <h1 className="font-futura mt-4 mb-2 text-center italic md:text-[25px] lg:text-[30px]">
         The Music
       </h1>
-      <div className="flex justify-center text-white">
+      <div className="flex justify-center">
         <p className="mt-10 w-[80%] text-justify">
           From the moment you step into the venue, the music begins doing what it does best.
           Bringing memories back, setting the mood, and connecting generations. HER is a fully
