@@ -22,13 +22,13 @@ export default function Navbar() {
           <li className="group relative">
             <span className="cursor-pointer transition hover:text-white">About</span>
 
-            <ul className="invisible absolute top-full left-0 mt-3 w-40 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+            <ul className="invisible absolute top-full left-0 mt-3 w-48 rounded-lg border border-white/10 bg-black/95 opacity-0 shadow-xl backdrop-blur-md transition-all duration-200 group-hover:visible group-hover:opacity-100">
               <li>
                 <a
-                  href="#"
+                  href="TheProduction"
                   className="block px-4 py-2 text-[10px] tracking-widest text-white/70 hover:bg-white/5 hover:text-white"
                 >
-                  The Show
+                  The Production
                 </a>
               </li>
               <li>
@@ -39,28 +39,28 @@ export default function Navbar() {
                   Cast
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
-                  href="#"
+                  href="TheCollective"
                   className="block px-4 py-2 text-[10px] tracking-widest text-white/70 hover:bg-white/5 hover:text-white"
                 >
-                  Creative
+                  The Collective
+                </a>
+              </li> */}
+              <li>
+                <a
+                  href="/History"
+                  className="block px-4 py-2 text-[10px] tracking-widest text-white/70 hover:bg-white/5 hover:text-white"
+                >
+                  The Manifiesto
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="Legal"
                   className="block px-4 py-2 text-[10px] tracking-widest text-white/70 hover:bg-white/5 hover:text-white"
                 >
-                  History
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/TermsModal"
-                  className="block px-4 py-2 text-[10px] tracking-widest text-white/70 hover:bg-white/5 hover:text-white"
-                >
-                  Credits and legal notice
+                  Legal
                 </a>
               </li>
             </ul>
@@ -90,7 +90,7 @@ export default function Navbar() {
         <div className="border-t border-white/10 px-6 py-6 md:hidden">
           <ul className="flex flex-col gap-4 text-xs tracking-widest text-white/80">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
 
             <li>
@@ -105,19 +105,19 @@ export default function Navbar() {
               {aboutOpen && (
                 <ul className="mt-3 ml-4 flex flex-col gap-3 text-[10px] text-white/60">
                   <li>
-                    <a href="#">The Show</a>
+                    <a href="#">The Production</a>
                   </li>
                   <li>
                     <a href="#">Cast</a>
                   </li>
+                  {/* <li>
+                    <a href="TheCollective">The Collective</a>
+                  </li> */}
                   <li>
-                    <a href="#">Creative</a>
+                    <a href="History">The Manifiesto</a>
                   </li>
                   <li>
-                    <a href="#">History</a>
-                  </li>
-                  <li>
-                    <a href="/TermsModal">Credits And Legal Notice</a>
+                    <a href="Legal">Legal</a>
                   </li>
                 </ul>
               )}
