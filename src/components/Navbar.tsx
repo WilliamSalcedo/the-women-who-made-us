@@ -105,7 +105,7 @@ export default function Navbar() {
               {aboutOpen && (
                 <ul className="mt-3 ml-4 flex flex-col gap-3 text-[10px] text-white/60">
                   <li>
-                    <a href="#">The Production</a>
+                    <a href="TheProduction">The Production</a>
                   </li>
                   <li>
                     <a href="#">Cast</a>
