@@ -1,0 +1,39 @@
+{
+  "text": {
+    "title": "This is The Women Who Made Us",
+    "sub-title": "Premiering Soon",
+    "intro": "A live music and storytelling universe about the women who shaped us. The artists, the icons, the voices that raised us, and the stories that stayed with us. Each project within this universe explores how women in culture, art, and music have shaped who we are today. This space is the beginning. If you are here, you are early.",
+    "ctaTitle": "A theatrical Experience Worth Waiting For",
+    "ctaDescription": "Subscribe to receive updates, early access, and invitations.",
+    "btmFirstName": "First Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "btmRegister": "JOIN THE VIP LIST",
+    "privacy": "Privacy Policy",
+    "terms": "Legal Notice",
+    "legalText": "@2026 Planni Entertainment. The Women Who Made Us is a registered trademark",
+    "registerEmail": "This email is already registered",
+    "errorRegistering": "Error registering",
+    "successful": "Successful record",
+    "send": "Sending...",
+    "requiredName":"Name is required",
+    "requiredLastName":"Last name is required",
+    "invalidEmail":"Invalid email",
+    "requiredEmail":"Email is required",
+    "privacyText":"By subscribing to Women Who Made Us, you agree that we may use your information to send you editorial content related to the project. Your data is stored securely, never sold, and you may unsubscribe at any time. By continuing, you agree to our Privacy Policy.",
+    "termsText":"By using this site, you agree to the Terms and Conditions of Women Who Made Us. The content is provided for informational purposes, is protected by copyright, and may be modified without prior notice."
+
+  },
+  "modal": {
+    "successTitle": "Registration successful ✨",
+    "successDescription": "You’ve been registered successfully. Check your inbox",
+    "emailExistsTitle": "This email already exists",
+    "emailExistsDescription": "Use a different email address.",
+    "genericErrorTitle": "Something went wrong",
+    "genericErrorDescription": "Please try again in a few minutes.",
+    "dbErrorTitle": "Almost there…",
+    "dbErrorDescription": "Your account was created, but we could not save your profile.",
+    "button":"Okay"
+  }
+}
