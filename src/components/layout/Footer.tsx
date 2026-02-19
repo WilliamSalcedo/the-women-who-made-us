@@ -6,7 +6,7 @@ export default function Footer() {
   const { t } = useTranslation()
 
   const onHandlePrivacy = () => navigate('/PrivacyModal')
-  const onHandleTerms = () => navigate('/TermsModal')
+  const onHandleTerms = () => navigate('/Legal')
 
   return (
     <div>
