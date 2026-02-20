@@ -31,14 +31,14 @@ export default function Navbar() {
                   The Production
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
-                  href="#"
+                  href="TheVoices"
                   className="block px-4 py-2 text-[10px] tracking-widest text-white/70 hover:bg-white/5 hover:text-white"
                 >
-                  Cast
+                  The Voices
                 </a>
-              </li>
+              </li> */}
               {/* <li>
                 <a
                   href="TheCollective"
@@ -67,13 +67,18 @@ export default function Navbar() {
           </li>
 
           <li>
-            <a href="/MusicDrawer" className="transition hover:text-white">
-              Music
+            <a href="TheAnthems" className="transition hover:text-white">
+              The Anthems
             </a>
           </li>
           <li>
-            <a href="/about" className="transition hover:text-white">
-              Get Involved
+            <a href="TheArchive" className="transition hover:text-white">
+              The Archive
+            </a>
+          </li>
+          <li>
+            <a href="TheMission" className="transition hover:text-white">
+              The Misssion
             </a>
           </li>
         </ul>
@@ -105,11 +110,11 @@ export default function Navbar() {
               {aboutOpen && (
                 <ul className="mt-3 ml-4 flex flex-col gap-3 text-[10px] text-white/60">
                   <li>
-                    <a href="#">The Production</a>
+                    <a href="TheProduction">The Production</a>
                   </li>
-                  <li>
-                    <a href="#">Cast</a>
-                  </li>
+                  {/* <li>
+                    <a href="Thevoices">The Voices</a>
+                  </li> */}
                   {/* <li>
                     <a href="TheCollective">The Collective</a>
                   </li> */}
@@ -124,10 +129,13 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="MusicDrawer">Music</a>
+              <a href="TheAnthems">The Anthems</a>
             </li>
             <li>
-              <a href="#">Get Involved</a>
+              <a href="TheArchive">The Archive</a>
+            </li>
+            <li>
+              <a href="TheMission">The Mission</a>
             </li>
           </ul>
         </div>
