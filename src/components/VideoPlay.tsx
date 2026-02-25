@@ -3,7 +3,7 @@ export default function VideoHero() {
 
   return (
     <div className="flex justify-center py-10">
-      <div className="relative aspect-video w-[80%] overflow-hidden rounded-2xl">
+      <div className="relative aspect-video w-[80%] overflow-hidden">
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src={videoSrc}

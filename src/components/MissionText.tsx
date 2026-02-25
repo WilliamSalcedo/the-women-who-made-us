@@ -17,7 +17,9 @@ export default function MissionText() {
         </p>
       </div>
       <div className="m-8 flex justify-center">
-        <img src={getInvolved} alt="" className="" />
+        <a href="TheMission">
+          <img src={getInvolved} alt="" className="" />
+        </a>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ export default function SocialMedia() {
     <div className="flex items-center justify-center gap-4 m-5">
       <div className="flex items-center justify-center px-2 py-2">
         <a
-          href="https://www.instagram.com/whomadeuslive?igsh=MW83MWVhaXBlZmxhMw=="
+          href="https://www.instagram.com/HerOnStage"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex text-[#fda963] hover:opacity-80 transition"

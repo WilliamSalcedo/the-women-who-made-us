@@ -56,9 +56,8 @@ export default function TheArchive() {
           URL="https://www.youtube.com/embed/XBT0bYYsXxA"
           title="Janis Joplin: The Industry Interview"
           description={`
-            "Being a woman in music means you have to want it more than you're afraid of it."
-            Janis’s raw honesty about the "boys' club" of the 60s is where our investigation began.
-            Watch for the moment she discusses the price of being the loudest voice in the room.
+            “For a woman to sing, she really needs to or wants to” A rare clip of Janis Joplin reveals how women in music are treated differently than men, both professionally and personally. 
+            It shows the emotional toll of that inequality and how the gender gap in the industry still exists today.
             `}
         />
 
@@ -71,7 +70,7 @@ export default function TheArchive() {
             women share the stage.`}
         />
         <VideoCards
-          URL="https://www.youtube.com/embed/Pb_iZgKEldc"
+          URL="https://www.youtube.com/embed/rI3UH7kO6cw"
           title='The Spice Girls: The "Girl Power" Interview'
           description={`"Don't just take the seat; change the table."
             Beyond the fashion and the hits, the

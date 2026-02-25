@@ -1,5 +1,6 @@
 import title from '../assets/TheProductionTitle.png'
 import subTitle from '../assets/TheProductionSubTitle.png'
+import image from '../assets/illustrationImage.png'
 
 export default function Production() {
   return (
@@ -23,6 +24,9 @@ export default function Production() {
           </b>
         </p>
       </div>
+      <div className='flex justify-center m-12'>
+        <img src={image} alt="" className='w-xl'/>
+      </div>
       <div className="mt-10 flex justify-center">
         <img src={subTitle} alt="" className="w-95" />
       </div>
@@ -32,7 +36,7 @@ export default function Production() {
           <br />
           <br />
           <b>
-            The Women Who Made Us exists because women ’ s voices deserve to be heard — not in
+            The Women Who Made Us exists because women’s voices deserve to be heard — not in
             competition, but in harmony.
           </b>
           <br />
@@ -43,7 +47,7 @@ export default function Production() {
           <br /> Music has the unique power to rem ind us of our shared history. We are not rivals;
           we are part of a collaborative tissue, woven together by the songs and stories that shaped
           our identity. <br />
-          <br /> I invite you to step into this space with us. Let ’ s remember, celebrate, and be
+          <br /> I invite you to step into this space with us. Let’s remember, celebrate, and be
           inspired by the lineag e that brought us here. <br />
           <br /> <b>Sandra Salcedo Miller</b> <i>Creator, The Women Who Made Us</i>
         </p>
