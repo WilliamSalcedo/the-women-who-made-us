@@ -8,7 +8,7 @@ function SpotifyBox({ linkSpotify }: SpotifyBoxProps) {
       loading="lazy"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       allowFullScreen
-      className="h-[232px] w-full rounded-xl border-0 md:h-[200px] md:w-[80%]"
+      className="h-[232px] w-full rounded-xl border-0 md:h-[200px] md:w-[80%] mx-2"
     />
   )
 }
