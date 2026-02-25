@@ -1,4 +1,5 @@
 import title from '../assets/TheAnthemsTitle.png'
+import image from '../assets/TheWoman.png'
 
 export default function TheAnthems() {
   return (
@@ -17,7 +18,6 @@ export default function TheAnthems() {
         </p>
       </div>
       <br />
-      <br />
       <div className="flex justify-center">
         <p className="mt-10 w-[80%] text-justify text-sm">
           <i><b>Legal Notice</b> This production may include brief audiovisual excerpts and archival
@@ -25,6 +25,9 @@ export default function TheAnthems() {
           fair use and copyright exceptions. All musical tributes are performed in honor of the
           original artists and their enduring legacies.</i>
         </p>
+      </div>
+      <div className='flex justify-center mt-12'>
+        <img src={image} alt="" className='w-3/5' />
       </div>
     </div>
   )
