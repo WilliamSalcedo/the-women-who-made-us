@@ -32,7 +32,7 @@ export default function TheMission() {
         <ProductCard  image={imageGirl}/>
       </div>
       <div className='flex justify-center items-center'>
-        <a href="https://fnd.us/houseofher?ref=sh_3ElUy4" 
+        <a href="https://fnd.us/houseofher?ref=sh_3ElUy4" target='blank'
         className='flex items-center justify-center border border-white w-30 h-10 text-center rounded-xl'>
            CONTRIBUTE
         </a>
