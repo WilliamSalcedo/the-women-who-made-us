@@ -1,4 +1,7 @@
 import title from '../assets/TheMissionTitle.png'
+import imageGirl from '../assets/MockupGirl.png'
+import ProductCard from './ProductCard'
+import imageTshirt from '../assets/MockupTshirt.png'
 
 export default function TheMission() {
   return (
@@ -21,6 +24,18 @@ export default function TheMission() {
           contribution goes directly toward the artist, the rehearsals, and the production costs of
           bringing this vision to the stage.
         </p>
+      </div>
+      <div className='m-6 grid grid-cols-1 flex-row gap-8 sm:grid-cols-2 md:m-10 lg:grid-cols-4'>
+        <ProductCard  image={imageGirl}/>
+        <ProductCard  image={imageTshirt}/>
+        <ProductCard  image={imageGirl}/>
+        <ProductCard  image={imageGirl}/>
+      </div>
+      <div className='flex justify-center items-center'>
+        <a href="https://fnd.us/houseofher?ref=sh_3ElUy4" 
+        className='flex items-center justify-center border border-white w-30 h-10 text-center rounded-xl'>
+           CONTRIBUTE
+        </a>
       </div>
     </div>
   )
