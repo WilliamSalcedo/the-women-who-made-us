@@ -81,6 +81,11 @@ export default function Navbar() {
               The Misssion
             </a>
           </li>
+          <li>
+            <a href="TheVisuals" className="transition hover:text-white">
+              The Visuals
+            </a>
+          </li>
         </ul>
 
         <button
@@ -136,6 +141,9 @@ export default function Navbar() {
             </li>
             <li>
               <a href="TheMission">The Mission</a>
+            </li>
+            <li>
+              <a href="TheVisuals">The Visuals</a>
             </li>
           </ul>
         </div>
