@@ -1,7 +1,7 @@
 interface ArchiveCardsProps{
   image:string
-  title:string
-  description:string
+  title?:string
+  description?:string
 }
 
 export default function ArchiveCards({image, title, description}: ArchiveCardsProps) {
