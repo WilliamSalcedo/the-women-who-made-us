@@ -5,7 +5,7 @@ import About from './pages/About/About'
 import NotFound from './pages/NotFound/NotFound'
 import PrivacyModal from './components/PrivacyModal'
 import MainLayout from './components/layout/MainLayout'
-import History from './components/History'
+import History from './components/Manifesto'
 import Production from './components/Production'
 import Legal from './components/Legal'
 import Collective from './components/Collective'
@@ -13,6 +13,7 @@ import TheVoices from './components/TheVoices'
 import TheAnthems from './components/TheAnthems'
 import TheMission from './components/TheMission'
 import TheArchive from './components/TheArchive'
+import TheVisuals from './components/TheVisuals'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path='/TheVoices' element={<TheVoices />} />
           <Route path='/TheMission' element={<TheMission />} />
           <Route path='/TheArchive' element={<TheArchive />} />
+          <Route path='/TheVisuals' element={<TheVisuals />} />
         </Route> 
       </Routes>
     </>
