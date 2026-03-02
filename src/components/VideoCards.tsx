@@ -2,13 +2,17 @@ interface VideoCardsProps {
   URL: string
   title: string
   description: string
+  iframeClassName?: string
 }
 
-export default function VideoCards({ URL, title, description }: VideoCardsProps) {
+export default function VideoCards({ URL, title, description,  iframeClassName }: VideoCardsProps) {
+
+  const defaultStyles = "w-full sm:w-[340px] sm:h-[340px]"
+  
   return (
-      <div className="m-4 flex flex-col items-center p-4 text-center text-[#fda963] ">
+      <div className="m-4 flex flex-col items-center  text-center text-[#fda963] ">
         <iframe
-          className="w-[100%]  sm:w-[340px] sm:h-[340px]"
+          className={iframeClassName ? iframeClassName : defaultStyles}
           src={URL}
           title="YouTube video"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
