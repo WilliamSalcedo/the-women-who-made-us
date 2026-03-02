@@ -14,7 +14,7 @@ export default function TheVisuals() {
         <p className="mt-10 w-[80%] text-justify">
           Seeing is believing. In this space, we share the visual journey of bringing this project
           to life. Here, you’ll fi nd our production concepts, design inspirations, and a
-          behind-the-scenes look at the "Army of Believers" at work
+          behind-the-scenes look at "The Architecs" at work
         </p>
       </div>
       <div className="mt-12 flex justify-center">
