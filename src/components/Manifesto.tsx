@@ -53,7 +53,7 @@ export default function History() {
         </p>
       </div>
       <div className="flex justify-center">
-        <p className="mt-10 w-[80%] text-end">Sandra Salcedo Miller, Creator</p>
+        <p className="mt-10 w-[80%]">Sandra Salcedo Miller, Creator</p>
       </div>
     </div>
   )
