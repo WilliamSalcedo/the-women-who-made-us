@@ -6,7 +6,7 @@ import conceptPhase from '../assets/ConceptPhase.png'
 import VideoCards from './VideoCards'
 export default function TheVisuals() {
   return (
-    <div className="m-8 flex flex-col justify-center text-[#fda963]">
+    <div className="m-6 flex flex-col justify-center text-[#fda963]">
       <div className="flex justify-center">
         <img src={title} alt="" className="w-95" />
       </div>
@@ -18,7 +18,7 @@ export default function TheVisuals() {
         </p>
       </div>
       <div className="mt-12 flex justify-center">
-        <img src={subTitle} alt="" className="w-2/4" />
+        <img src={subTitle} alt="" className="w-5/5 lg:w-2/4" />
       </div>
       <div className="m-6 grid grid-cols-1 flex-row gap-8 text-[#fda963] sm:grid-cols-2 md:m-10 lg:grid-cols-3">
         <ArchiveCards image={paper} title="The Evolution" description='The "Paper" Phase' iframeClassName='sm:w-[250px] sm:h-[250px]' />
